@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SpartanGym-Business\SpartanGym-Business.csproj" />
     <ProjectReference Include="..\SpartanGym-Data\SpartanGym-Data.csproj" />
   </ItemGroup>
 

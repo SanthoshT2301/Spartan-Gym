@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 
 
-namespace SpartanGym_Business.Interface.User
+namespace SpartanGym_Business.Interface.Users
 {
     //GetAllUser
     //GetUserByID
@@ -17,7 +17,7 @@ namespace SpartanGym_Business.Interface.User
         public Task<List<UserDto>> GetAllUser();
         public Task<UserDto> GetUserById(int id);
         public Task<List<UserDto>> GetUserNotPaid();
-        public Task AddNewUser(UserDto NewUser);
+        public Task AddNewUser(CreateUser NewUser);
         public Task UpdateUserInformation(UserDto UpdateUser);
     }
 }

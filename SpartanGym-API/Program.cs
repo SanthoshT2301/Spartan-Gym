@@ -1,4 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+
+using SpartanGym_Business.Interface.Users;
+
 using SpartanGym_Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,7 +14,7 @@ builder.Services.AddDbContext<AppDBContext>(options =>
 // Add services
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
-
+builder.Services.AddScoped<IUserService,UserService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline

@@ -6,7 +6,7 @@ namespace SpartanGym_Core.DTO
 {
     public class CreateUser
     {
-
+        public int RoleId {  get; set; }
         public string UserName { get; set; }
         public string FirstName { get; set; }
         public string? LastName { get; set; }

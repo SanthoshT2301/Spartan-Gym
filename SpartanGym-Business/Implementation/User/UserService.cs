@@ -1,19 +1,31 @@
-﻿using SpartanGym_Business.Interface.User;
+﻿using AutoMapper;
+using SpartanGym_Business.Interface.User;
 using SpartanGym_Core.DTO;
+using SpartanGym_Core.Mapper;
+using SpartanGym_Core.Model;
 using SpartanGym_Data;
+using SpartanGym_Data.UserData;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SpartanGym_Business.Implementation.User
+namespace SpartanGym_Business.Implementation.Users
 {
     public class UserService : IUserService
     {
-
-       
-
-        public Task AddNewUser(UserDto NewUser)
+        private readonly IMapper _mapper;
+        private readonly UserData _data;
+        public UserService(IMapper mapper)
         {
+           
+            _mapper = mapper;
+        }
+
+        public async Task AddNewUser(CreateUser NewUser)
+        {
+            var user=_mapper.Map<User>(NewUser);
+            _data.AddNewData(user);
+           
             throw new NotImplementedException();
         }
 
