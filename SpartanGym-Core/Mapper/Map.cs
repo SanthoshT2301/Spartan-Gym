@@ -11,11 +11,7 @@ namespace SpartanGym_Core.Mapper
     {
         public Map()
         {
-            CreateMap<User, UserDto>();
-            CreateMap<Attendance, AttendanceDto>();
-            CreateMap<Events, EventDto>();
-            CreateMap<Orders, OrderDto>();
-            CreateMap<Supplements, SupplementDto>();
+            CreateMap<UserDto, User>().ReverseMap();
         }
     }
 }
