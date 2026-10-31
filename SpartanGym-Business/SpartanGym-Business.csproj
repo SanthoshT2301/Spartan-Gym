@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>SpartanGym_Business</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SpartanGym-Core\SpartanGym-Core.csproj" />
+    <ProjectReference Include="..\SpartanGym-Data\SpartanGym-Data.csproj" />
+  </ItemGroup>
+
+</Project>

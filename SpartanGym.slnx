@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
+  <Project Path="SpartanGym-API/SpartanGym-API.csproj" />
+  <Project Path="SpartanGym-Business/SpartanGym-Business.csproj" Id="19d8eb25-eaf6-4d65-85f3-ff572b3594d6" />
+  <Project Path="SpartanGym-Core/SpartanGym-Core.csproj" />
+  <Project Path="SpartanGym-Data/SpartanGym-Data.csproj" />
+</Solution>
